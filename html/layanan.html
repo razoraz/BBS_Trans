@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Beranda</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../css/layanan.css" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Foldit:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+
+    <!-- Icons -->
+    <script src="https://unpkg.com/@phosphor-icons/web" defer></script>
+  </head>
+
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar">
+      <!-- Background Video -->
+      <video autoplay muted loop playsinline class="bg-video">
+        <source src="../image/video_background/video_2.mp4" type="video/mp4" />
+      </video>
+      <!-- Navbar Content -->
+      <div class="nav-content">
+        <div class="nav-logo">
+          <a href="../index.html">
+            <img src="../image/logo.png" alt="Logo" />
+          </a>
+        </div>
+        <div class="navbar-nav">
+          <ul id="menu-list">
+            <li><a href="../index.html">Beranda</a></li>
+            <li><a href="layanan.html">Layanan</a></li>
+            <li><a href="tentang_kami.html">Tentang Kami</a></li>
+            <li>
+              <a href="https://wa.me/6281337142265" class="btn-navbar" target="_blank"> <i class="ph ph-whatsapp-logo"></i> Chat WhatsApp </a>
+            </li>
+          </ul>
+        </div>
+
+        <div id="menu-icon" class="menu-icon" onclick="toggleMenu()">
+          <i class="ph ph-list"></i>
+        </div>
+      </div>
+
+      <!-- Navbar Chat Now (WhatsApp) -->
+      <section class="nav-chat-now">
+        <h1>Layanan Blambangan Bahari Shipyard Trans</h1>
+        <p><span class="travel-text">BBS Trans</span> itu bukan sekadar mengantar, tapi mengubah perjalananmu jadi cerita yang ingin kamu ulangi.</p>
+        <a href="https://wa.me/6281337142265" class="btn-whatsapp" target="_blank"> <i class="ph ph-whatsapp-logo"></i> Pesan perjalananmu! </a>
+      </section>
+    </nav>
+
+    <!-- Section Layanan -->
+    <div class="layanan-header">
+      <h1>Blambangan Bahari Shipyard Trans</h1>
+      <div class="decorative-line-2"></div>
+      <p>Memberikan kesempatan terbaik untuk mengubah perjalananmu menjadi pengalaman yang tak terlupakan bersama layanan premium kami.</p>
+    </div>
+    <div class="layanan-layout">
+      <section class="layanan-container fade-section">
+        <div class="layanan-content">
+          <div class="layanan-img">
+            <img src="../image/car/image_innova_reborn_2.jpg" alt="Mobil Innova Reborn" />
+          </div>
+          <div class="layanan-detail">
+            <h2>Travel Banyuwangi - Surabaya</h2>
+            <p class="price">Rp 200.000 / orang</p>
+            <p class="kriteria">• Termasuk Driver Profesional<br />• Makanan & Minuman<br />• Mobil bersih dan nyaman</p>
+            <a href="https://wa.me/6281337142265" target="_blank" class="btn-pesan">Pesan Sekarang</a>
+          </div>
+        </div>
+      </section>
+      <section class="layanan-container fade-section">
+        <div class="layanan-content">
+          <div class="layanan-img">
+            <img src="../image/car/innova-reborn.jpg" alt="Mobil Innova Reborn" />
+          </div>
+          <div class="layanan-detail">
+            <h2>Sewa Mobil Bebas Tujuan</h2>
+            <p class="price">Rp 900.000 / 12 jam</p>
+            <p class="kriteria">• Termasuk Driver Profesional<br />• Kapasitas 5 orang<br />• Mobil dilengkapi dengan GPS</p>
+            <a href="https://wa.me/6281337142265" target="_blank" class="btn-pesan">Pesan Sekarang</a>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- footer -->
+    <div id="load-footer"></div>
+
+    <!-- javascript -->
+    <script src="../js/script.js"></script>
+    <script src="../js/component.js"></script>
+  </body>
+</html>
