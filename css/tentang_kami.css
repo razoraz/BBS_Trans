@@ -1,0 +1,333 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@200;300;400;500;600;700;800&display=swap');
+
+/* Css Body */
+body {
+  font-family: 'Mulish', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Reset link */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Navbar */
+.navbar {
+  position: relative;
+  width: 100%;
+  height: 90vh;
+  overflow: hidden;
+}
+
+/* Background Video */
+.navbar .bg-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 1;
+}
+
+/* Navbar Content */
+.nav-content {
+  position: fixed;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+  width: 100%;
+  height: 70px;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), /* Hitam pekat 70% */ rgba(0, 0, 0, 0) /* Hitam transparan 0% */);
+  backdrop-filter: blur(5px);
+}
+.nav-logo img {
+  height: 100px;
+}
+.navbar-nav ul {
+  padding-right: 3rem;
+  display: flex;
+  list-style: none;
+  margin: 0;
+}
+.navbar-nav li {
+  margin: 0 1rem;
+  font-weight: 700;
+  font-size: 15px;
+  position: relative;
+}
+.navbar-nav a {
+  padding: 10px;
+  color: #efeeea;
+  display: inline-block;
+}
+
+/* Hover effect */
+.navbar-nav li:hover a {
+  color: #ed5c01;
+}
+.navbar-nav li::after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 3px;
+  background: #ed5c01;
+  transition: 0.3s;
+}
+.navbar-nav li:hover::after {
+  width: 50%;
+  margin: auto;
+}
+
+/*body scroll smooth */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Section Chat Whatsapp */
+.nav-chat-now {
+  position: relative;
+  text-align: center;
+  margin-top: 80px;
+  padding: 50px;
+  color: #efeeea;
+  z-index: 2;
+}
+.nav-chat-now h1 {
+  font-size: 50px;
+  color: #efeeea;
+}
+.nav-chat-now p {
+  font-size: 20px;
+  color: #ffffff;
+}
+.travel-text {
+  font-weight: 1000;
+  color: #efeeea;
+}
+.btn-whatsapp {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #273f4f;
+  color: #ffffff;
+  border-radius: 20px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+/* Hover effect whatsapp */
+.btn-whatsapp:hover {
+  background-color: #ed5c01;
+}
+
+/* Tentang Kami  Section */
+.tentang-kami-section {
+  display: flex;
+  flex-wrap: wrap;
+  flex: 1;
+  background-color: #ecefca;
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+.tentang-kami-container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+}
+.tentang-kami-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+.tentang-kami-header h1 {
+  font-size: 2.5rem;
+  color: #273f4f;
+  font-family: 'Mulish', sans-serif;
+}
+.tentang-kami-header .decorative-line-2 {
+  width: 80px;
+  height: 4px;
+  background-color: #273f4f; /* Ganti warna sesuai tema */
+  margin: 10px auto 0;
+  border-radius: 2px;
+}
+.tentang-kami-content {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #273f4f;
+  font-family: 'Mulish', sans-serif;
+}
+.tentang-kami-content p {
+  margin-top: -40px;
+  margin-left: 500px;
+  text-align: left;
+  margin-bottom: 10px;
+}
+.tentang-kami-content .travel-text {
+  font-weight: bold;
+  color: #273f4f; /* Bisa sesuaikan warna brand kamu */
+}
+.tentang-kami-content .btn-pesan {
+  margin-bottom: 20px;
+  text-align: center;
+}
+.btn-pesan a {
+  text-align: center;
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #273f4f;
+  color: #ffffff;
+  font-weight: bold;
+  border-radius: 20px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+.decorative-line-2 {
+  width: 100px;
+  height: 6px;
+  background-color: #273f4f;
+  border-radius: 2px;
+  margin: 0 auto 50px;
+}
+.tentang-kami-img {
+  margin-top: 30px;
+  padding: 40px;
+  width: 25%;
+  border-radius: 10px;
+}
+.tentang-kami-img img {
+  max-width: 300px;
+  position: relative;
+}
+.img1,
+.img2,
+.img3 {
+  position: absolute;
+  width: 400px;
+  height: 350px;
+  border-radius: 15px;
+}
+.img1 {
+  background: url(../image/car/innova_reborn.jpg) no-repeat center;
+  background-size: cover;
+  animation: fade 8s infinite;
+  -webkit-animation: fade 8s infinite;
+}
+.img2 {
+  background: url(../image/car/img1.jpg) no-repeat center;
+  background-size: cover;
+  animation: fade2 8s infinite;
+  -webkit-animation: fade2 8s infinite;
+}
+.img3 {
+  background: url(../image/car/img2.jpg) no-repeat center;
+  background-size: cover;
+  animation: fade3 8s infinite;
+  -webkit-animation: fade3 8s infinite;
+}
+@keyframes fade {
+  0% {
+    opacity: 1;
+  }
+  33.333% {
+    opacity: 0;
+  }
+  66.666% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fade2 {
+  0% {
+    opacity: 0;
+  }
+  33.333% {
+    opacity: 1;
+  }
+  66.666% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes fade3 {
+  0% {
+    opacity: 0;
+  }
+  33.333% {
+    opacity: 0;
+  }
+  66.666% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+/* Hover Effect */
+.btn-pesan a:hover {
+  background-color: #ed5c01;
+}
+
+/* Menu Icon */
+.menu-icon {
+  font-size: 28px;
+  display: none;
+  color: #efeeea;
+  cursor: pointer;
+}
+
+/* Responsive */
+@media only screen and (max-width: 768px) {
+  .nav-content {
+    flex-direction: column;
+    align-items: flex-start;
+    height: auto;
+    padding: 1rem;
+  }
+
+  .nav-logo {
+    align-self: center;
+    margin-bottom: 10px;
+  }
+
+  .navbar-nav ul {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.7);
+    margin-top: 10px;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+
+  .navbar-nav ul.show {
+    display: flex;
+  }
+
+  .navbar-nav li {
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+    margin: 0;
+  }
+
+  .navbar-nav li:hover {
+    background-color: #fcdccf;
+  }
+
+  .menu-icon {
+    display: block;
+    position: absolute;
+    top: 20px;
+    right: 30px;
+  }
+}
