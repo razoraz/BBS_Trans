@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Beranda</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../css/index.css" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Foldit:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+
+    <!-- Icons -->
+    <script src="https://unpkg.com/@phosphor-icons/web" defer></script>
+  </head>
+
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar">
+      <!-- Background Video -->
+      <video autoplay muted loop playsinline class="bg-video">
+        <source src="../image/video_background/video_1.mp4" type="video/mp4" />
+      </video>
+
+      <!-- Navbar Content -->
+      <div class="nav-content">
+        <div class="nav-logo">
+          <a href="index.html">
+            <img src="../image/logo.png" alt="Logo Travel" />
+          </a>
+        </div>
+        <div class="navbar-nav">
+          <ul id="menu-list">
+            <li><a href="index.html">Beranda</a></li>
+            <li><a href="../html/layanan.html">Layanan</a></li>
+            <li><a href="../html/tentang_kami.html">Tentang Kami</a></li>
+            <li>
+              <a href="https://wa.me/6281337142265" class="btn-navbar" target="_blank"> <i class="ph ph-whatsapp-logo"></i> Chat WhatsApp </a>
+            </li>
+          </ul>
+        </div>
+        <div id="menu-icon" class="menu-icon" onclick="toggleMenu()">
+          <i class="ph ph-list"></i>
+        </div>
+      </div>
+
+      <!-- Navbar Chat Now (WhatsApp) -->
+      <section class="nav-chat-now">
+        <h1>Siap Berpetualang?</h1>
+        <p>Hubungi <span class="travel-text">Blambangan Bahari Shipyard Trans</span> sekarang lewat WhatsApp untuk menemani perjalananmu!</p>
+        <a href="https://wa.me/6281337142265" class="btn-whatsapp" target="_blank"> <i class="ph ph-whatsapp-logo"></i> Chat WhatsApp </a>
+      </section>
+    </nav>
+
+    <!-- Hero Section 1 -->
+    <section class="hero fade-section">
+      <div class="hero-left">
+        <h1 class="bold-text">Jejak <span class="travel-text">Layanan BBS Trans</span></h1>
+        <div class="decorative-line"></div>
+        <h5 class="light-text">
+          <span class="extra-text">BBS Trans</span> merupakan tempat penyedia jasa travel yang melayani perjalanan di area <span class="extra-text">Banyuwangi - Surabaya</span>.<span class="extra-text">BBS Trans</span>tumbuh dan berkembang bersama pelanggan melalui pelayanan yang handal, berkualitas, cepat dan profesional.
+          <span class="extra-plus-text">Nge-trip bareng BBS Trans? #LangsungGas tanpa drama!</span>
+        </h5>
+      </div>
+      <div class="hero-right">
+        <div class="img-container">
+          <div class="img1"></div>
+          <div class="img2"></div>
+          <div class="img3"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Hero Section 2 -->
+    <section class="hero-2-container fade-section">
+      <div class="hero-heading">
+        <h1>Layanan Utama</h1>
+        <div class="decorative-line-2"></div>
+      </div>
+      <div class="grid fade-section">
+        <div class="travel-card">
+          <div class="heading-container">
+            <img src="../image/logo.png" alt="Logo Travel" />
+            <h4>Innova Reborn Travel Banyuwangi - Surabaya</h4>
+          </div>
+          <div class="content-container">
+            <h4>Nikmati perjalanan yang nyaman menggunakan Innova Reborn Travel dari Banyuwangi menuju Surabaya. Harga terjangkau dan pelayanan terbaik.</h4>
+          </div>
+          <div class="car-img">
+            <img src="../image/car/innova-reborn.jpg" alt="Innova Reborn" />
+          </div>
+          <div class="btn-layanan">
+            <a href="../html/layanan.html">Lihat Layanan</a>
+          </div>
+        </div>
+        <div class="travel-card">
+          <div class="heading-container">
+            <img src="../image/logo.png" alt="Logo Travel" />
+            <h4>Innova Reborn Sewa Include Driver</h4>
+          </div>
+          <div class="content-container">
+            <h4>Sewa mobil di Innova Reborn Sewa include dengan driver profesional dan pelayanan yang ideal untuk perjalanan keluarga atau grup kecil dengan kapasitas 5 orang.</h4>
+          </div>
+          <div class="car-img">
+            <img src="../image/car/image_innova_reborn_2.jpg" alt="Innova Reborn" />
+          </div>
+          <div class="btn-layanan">
+            <a href="../html/layanan.html">Lihat Layanan</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Hero Section 3 -->
+    <section class="hero-3-container fade-section">
+      <div class="hero-heading">
+        <h1>Keunggulan Kami</h1>
+        <div class="decorative-line-2"></div>
+      </div>
+      <div class="services-card fade-section">
+        <div class="scard">
+          <div class="scard-container">
+            <img id="affordable-icon" src="./image/icon/affordable-price.png" alt="Ikon Harga Terjangkau" />
+            <b class="second-text">Harga Terjangkau</b>
+          </div>
+          <p class="third-text">Harga tiket yang bersaing dengan berbagai promo menarik. Pembayaran mudah melalui e-wallet atau bank yang tersedia.</p>
+        </div>
+        <div class="scard">
+          <div class="scard-container">
+            <img src="./image/icon/GPS-tracking-icon.png" alt="Ikon Sistem Pelacakan GPS" />
+            <b class="second-text">Pelacakan GPS</b>
+          </div>
+          <p class="third-text">Perjalanan lebih aman dengan pelacakan lokasi secara real-time menggunakan GPS, memungkinkan estimasi durasi dan jarak yang lebih akurat.</p>
+        </div>
+        <div class="scard">
+          <div class="scard-container">
+            <img src="./image/icon/icon-pool.png" alt="Ikon Pool to Pool" />
+            <b class="second-text">Layanan Pool to Pool</b>
+          </div>
+          <p class="third-text">Berangkat dan tiba di tujuan sesuai dengan jadwal dan lokasi pemesanan yang telah dipilih.</p>
+        </div>
+        <div class="scard">
+          <div class="scard-container">
+            <img src="./image/icon/meals.png" alt="Ikon Makanan" />
+            <b class="second-text">Makanan & Minuman</b>
+          </div>
+          <p class="third-text">Perjalanan lebih nyaman dengan makanan dan minuman yang telah disediakan.</p>
+        </div>
+        <div class="scard">
+          <div class="scard-container">
+            <img src="./image/icon/driver.png" alt="Ikon Driver" />
+            <b class="second-text">Driver Profesional</b>
+          </div>
+          <p class="third-text">Driver yang profesional dan berpengalaman, menjaga keamanan dan kepuasan pelanggan.</p>
+        </div>
+        <div class="scard">
+          <div class="scard-container">
+            <img src="./image/icon/ergonomis.png" alt="Ikon Ergonomis" />
+            <b class="second-text">Kenyamanan Ergonomis</b>
+          </div>
+          <p class="third-text">Fasilitas tempat duduk yang nyaman dan dapat diatur, dengan ruang kaki yang luas, serta kendaraan yang selalu dalam keadaan bersih.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- footer -->
+    <div id="load-footer"></div>
+
+    <!-- javascript -->
+    <script src="../js/script.js"></script>
+    <script src="../js/component.js"></script>
+  </body>
+</html>
