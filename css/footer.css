@@ -37,9 +37,6 @@ ul {
   margin: initial;
 }
 .footer {
-  align-items: center;
-  margin-top: 20px;
-  justify-content: center;
   width: 100%;
   box-shadow: 2px 2px 2px 3px rgba(0.1, 0.1, 0.1, 0.06);
   margin-bottom: 10px;
@@ -50,13 +47,24 @@ ul {
 }
 .footer-col {
   display: flex;
+  flex: 1;
+  flex-wrap: wrap;
+  gap: 5px;
+  margin: 20px;
+  margin-bottom: 20px;
+}
+.footer-content {
   flex-direction: column;
+  margin: 5px;
+
+  margin-bottom: 20px;
 }
 .foot-left img {
   margin-bottom: 20px;
   margin-top: 20px;
-  width: 134px;
+  width: 120px;
 }
+
 .footer-col h4 {
   margin: 10px;
   margin-top: 10px;
@@ -79,8 +87,14 @@ ul {
   display: block;
   transition: all 0.3s ease;
 }
+.footer .row2 p{
+  text-align: center;
+  align-items: center;
+}
 .row2 p {
   text-align: center;
+  margin: 0;
+  align-items: center;
   color: var(--light-text-color-body-1, #273f4f);
   font-size: 16px;
   font-style: normal;
