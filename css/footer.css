@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@200;300;400;500;600;700;800&display=swap');
+body {
+  font-family: 'Mulish', sans-serif;
+}
+.head-footer {
+  display: flex;
+  justify-content: space-between; /* Memisahkan logo dan h1 */
+  align-items: center; /* Menjaga keduanya tetap sejajar secara vertikal */
+  margin-bottom: 20px;
+}
+
+.head-footer img {
+  max-width: 100px; /* Ukuran gambar logo */
+}
+
+.head-footer h1 {
+  font-size: 24px;
+  font-weight: 1000;
+  margin-right: 100px;
+  color: #273f4f;
+  cursor: pointer;
+}
+
+.row-footer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.row2 {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+ul {
+  list-style: none;
+  padding: 5px 5px;
+  margin: initial;
+}
+.footer {
+  align-items: center;
+  margin-top: 20px;
+  justify-content: center;
+  width: 100%;
+  box-shadow: 2px 2px 2px 3px rgba(0.1, 0.1, 0.1, 0.06);
+  margin-bottom: 10px;
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  background-color: #ffffff;
+}
+.footer-col {
+  display: flex;
+  flex-direction: column;
+  margin: 20px 40px 20px 40px;
+}
+.foot-left img {
+  margin-bottom: 20px;
+  margin-top: 20px;
+  width: 134px;
+}
+.footer-col h4 {
+  margin-top: 10px;
+  font-size: 18px;
+  color: #273f4f;
+  text-transform: capitalize;
+  font-weight: 700;
+  position: relative;
+}
+.footer-col ul li:not(:last-child) {
+  margin-bottom: 10px;
+}
+.footer-col ul li a {
+  margin-top: 10px;
+  color: var(--light-text-color-body-1, #273f4f);
+  font-size: 16px;
+  text-transform: capitalize;
+  text-decoration: none;
+  font-weight: 300;
+  display: block;
+  transition: all 0.3s ease;
+}
+.row2 p {
+  text-align: center;
+  color: var(--light-text-color-body-1, #273f4f);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: 0.08px;
+}
+.social-links {
+  display: flex;
+  flex-direction: column;
+}
+.social-links a {
+  width: 100%;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  text-decoration: none;
+  margin: 0 10px 10px 0;
+  color: #273f4f;
+  margin-left: 40px;
+  transition: all 0.5s ease;
+}
+/*responsive*/
+@media (max-width: 970px) {
+  .footer-col {
+    width: 50%;
+    margin-bottom: 30px;
+  }
+}
+@media (max-width: 574px) {
+  .footer-col {
+    width: 100%;
+  }
+}
+
+/* Hover */
+.social-links a:hover {
+  color: #ed5c01;
+  transition: all 0.5s ease;
+}
+
+.footer-col ul li a:hover {
+  color: #ed5c01;
+  transition: all 0.5s ease;
+}
+
+.head-footer h1:hover {
+  color: #ed5c01;
+  transition: all 0.5s ease;
+}
+/* Scroll Fade in and out */
+.fade-section {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.8s ease-out;
+  will-change: opacity, transform;
+}
+
+.fade-section.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.fade-section.hide {
+  opacity: 0;
+  transform: translateY(20px);
+}
