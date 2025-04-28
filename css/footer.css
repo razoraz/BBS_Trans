@@ -91,9 +91,17 @@ ul {
   text-align: center;
   align-items: center;
 }
+.row2 {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
 .row2 p {
   text-align: center;
-  margin: 0;
   align-items: center;
   color: var(--light-text-color-body-1, #273f4f);
   font-size: 16px;
