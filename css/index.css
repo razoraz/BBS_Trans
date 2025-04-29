@@ -166,7 +166,7 @@ html {
 }
 .hero-head h1 {
   color: #273f4f;
-  font-size: 50px;
+  font-size: 40px;
   font-weight: 600;
   line-height: 120%;
   letter-spacing: 0.186px;
@@ -295,7 +295,6 @@ html {
 .hero-heading h1 {
   font-size: 40px;
   color: #273f4f;
-  margin-bottom: 50px;
 }
 .grid {
   display: flex;
@@ -304,7 +303,9 @@ html {
   flex-wrap: wrap;
 }
 .travel-card {
-  flex: 1 1 45%;
+  flex: 1 1 50%;
+  width: auto;
+  height: auto;
   max-width: 500px;
   background-color: #273f4f;
   border: 1.5px solid #e1e1fb;
@@ -468,12 +469,11 @@ html {
     flex-direction: column;
     align-items: center; /* penting agar item di tengah */
     justify-content: center;
-
     margin-top: 10px;
     border-radius: 10px;
     overflow: hidden;
     padding: 20px 40px; /* ini ngatur jarak kiri-kanan dan atas-bawah */
-    width: fit-content; /* biar ukurannya ngikutin isi, bukan full 100% */
+
     margin-left: auto;
     margin-right: auto; /* ini bikin kontainer ul bener-bener ketengah */
   }
@@ -529,23 +529,20 @@ html {
     text-align: center;
     margin-left: auto;
     margin-right: auto;
+    width: 50px;
+    height: 3px;
+  }
+  .decorative-line-2 {
+    width: 50px;
+    height: 3px;
   }
 
   .hero-left h1 {
     font-size: 24px;
   }
-  .hero-head h1{
+  .hero-head h1 {
     font-size: 30px;
   }
-  .decorative-line {
-    width: 50px;
-    height: 3px;
-    background-color: #273f4f;
-    border-radius: 2px;
-    margin-bottom: 70px;
-  }
-  
-
   .hero-left h5 {
     font-size: 16px;
     line-height: 1.5;
@@ -556,7 +553,6 @@ html {
     text-align: center;
     font-size: 12px;
   }
-
 
   .hero .light-text {
     margin-left: auto;
@@ -569,22 +565,27 @@ html {
     margin-left: auto;
     margin-right: auto;
   }
-
 }
-
- 
 
 @media (max-width: 768px) {
   .grid {
     display: flex;
     flex-direction: column;
-    gap: 20px;
-    padding: 0 20px;
+  }
+  .hero-heading h1 {
+    font-size: 30px;
+  }
+  .heading-container h4 {
+    font-size: 14px;
+  }
+  .content-container h4 {
+    font-size: 12px;
   }
 
   .travel-card {
-    width: 100%;
-    padding: 15px;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .car-img img {
@@ -599,14 +600,13 @@ html {
   }
 }
 @media (max-width: 768px) {
-  .row-footer {
+  .footer {
     flex-direction: column;
-    align-items: center;
-    gap: 30px;
-    padding: 20px;
   }
 
   .footer-col {
+    flex-direction: column;
+    align-items: center;
     width: 100%;
     text-align: center;
   }
