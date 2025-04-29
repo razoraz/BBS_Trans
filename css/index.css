@@ -145,28 +145,41 @@ html {
 
 /* Section 1 */
 .hero {
-  margin-top: 120px;
+  padding: 80px 40px;
   display: flex;
-  gap: 60px;
-  margin-bottom: 100px;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 .hero-left {
-  width: 50%;
-  margin-left: 40px;
+  flex: 1 1 50%;
+  padding: 20px;
 }
-.hero .bold-text {
-  margin-top: -50px;
-  margin-bottom: 20px;
+.hero-right {
+  flex: 1 1 50%;
+  text-align: center;
+  padding: 20px;
+}
+
+.hero-head {
+  margin-left: 20px;
+  width: 100%;
+}
+.hero-head h1 {
   color: #273f4f;
   font-size: 50px;
   font-weight: 600;
   line-height: 120%;
   letter-spacing: 0.186px;
 }
+.hero-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
 .hero .light-text {
   text-align: left;
-  margin-top: 20px;
-  margin-left: 40px;
   color: var(--light-text-color-body-1, #333333);
   font-size: 20px;
   line-height: 130%;
@@ -196,76 +209,75 @@ html {
 }
 .hero-right {
   margin-top: 30px;
-  margin-left: 100px;
-  width: 25%;
-  border-radius: 10px;
+  width: 100%;
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
 }
-.img-container img {
-  max-width: 100%;
+.img-container {
   position: relative;
+  width: 100%;
+  aspect-ratio: 4 / 3;
 }
+
 .img1,
 .img2,
 .img3 {
   position: absolute;
-  width: 500px;
-  height: 450px;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
   border-radius: 15px;
-}
-.img1 {
-  background: url(../image/car/innova_reborn.jpg) no-repeat center;
   background-size: cover;
-  animation: fade 10s infinite;
-  -webkit-animation: fade 8s infinite;
+  background-position: center;
+  z-index: 2;
+  transition: opacity 0.8s ease-in-out;
+}
+
+.img1 {
+  background-image: url(../image/car/innova_reborn.jpg);
+  animation: fade 8s infinite;
 }
 .img2 {
-  background: url(../image/car/innova_reborn_3.jpg) no-repeat center;
-  background-size: cover;
+  background-image: url(../image/car/innova_reborn_3.jpg);
   animation: fade2 8s infinite;
-  -webkit-animation: fade2 8s infinite;
 }
 .img3 {
-  background: url(../image/car/interior_innova.jpg) no-repeat center;
-  background-size: cover;
+  background-image: url(../image/car/interior_innova.jpg);
   animation: fade3 8s infinite;
-  -webkit-animation: fade3 8s infinite;
 }
+
 @keyframes fade {
-  0% {
-    opacity: 1;
-  }
-  33.333% {
-    opacity: 0;
-  }
-  66.666% {
-    opacity: 0;
-  }
+  0%,
   100% {
     opacity: 1;
   }
+  33.33%,
+  66.66% {
+    opacity: 0;
+  }
 }
+
 @keyframes fade2 {
-  0% {
-    opacity: 0;
-  }
-  33.333% {
-    opacity: 1;
-  }
-  66.666% {
-    opacity: 0;
-  }
+  0%,
   100% {
     opacity: 0;
   }
+  33.33% {
+    opacity: 1;
+  }
+  66.66% {
+    opacity: 0;
+  }
 }
+
 @keyframes fade3 {
-  0% {
+  0%,
+  33.33% {
     opacity: 0;
   }
-  33.333% {
-    opacity: 0;
-  }
-  66.666% {
+  66.66% {
     opacity: 1;
   }
   100% {
@@ -503,40 +515,65 @@ html {
   .navbar .navbar-nav li::after {
     border-bottom: none;
   }
-}
-@media (max-width: 768px) {
   .hero {
     flex-direction: column;
-    padding: 20px;
+    padding: 40px 20px;
     text-align: center;
+  }
+  .hero-left {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .decorative-line {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .hero-left h1 {
     font-size: 24px;
   }
+  .hero-head h1{
+    font-size: 30px;
+  }
+  .decorative-line {
+    width: 50px;
+    height: 3px;
+    background-color: #273f4f;
+    border-radius: 2px;
+    margin-bottom: 70px;
+  }
+  
 
   .hero-left h5 {
     font-size: 16px;
     line-height: 1.5;
   }
-
-  .hero-right .img-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
-    margin-top: 20px;
+  .hero .light-text {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    font-size: 12px;
   }
 
-  .img1,
-  .img2,
-  .img3 {
-    width: 80%;
-    height: 150px;
-    background-size: cover;
-    background-position: center;
+
+  .hero .light-text {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
   }
+  .hero-right {
+    margin-top: -5px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
 }
+
+ 
+
 @media (max-width: 768px) {
   .grid {
     display: flex;
