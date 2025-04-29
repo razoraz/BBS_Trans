@@ -99,7 +99,6 @@ a {
 }
 .material-icons-outlined {
   margin-right: 10px;
- 
 }
 
 /* Optional - buat body scroll smooth */
@@ -148,7 +147,7 @@ html {
 .hero {
   margin-top: 120px;
   display: flex;
-  gap: 60x;
+  gap: 60px;
   margin-bottom: 100px;
 }
 .hero-left {
@@ -202,7 +201,7 @@ html {
   border-radius: 10px;
 }
 .img-container img {
-  max-width: auto;
+  max-width: 100%;
   position: relative;
 }
 .img1,
@@ -484,9 +483,8 @@ html {
     top: 0;
     right: 0;
     margin: 1.5rem 10%;
-
   }
-  .menu-icon:hover{
+  .menu-icon:hover {
     color: #ed5c01;
   }
   .navbar .navbar-nav ul {
@@ -504,5 +502,92 @@ html {
   }
   .navbar .navbar-nav li::after {
     border-bottom: none;
+  }
+}
+@media (max-width: 768px) {
+  .hero {
+    flex-direction: column;
+    padding: 20px;
+    text-align: center;
+  }
+
+  .hero-left h1 {
+    font-size: 24px;
+  }
+
+  .hero-left h5 {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+
+  .hero-right .img-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin-top: 20px;
+  }
+
+  .img1,
+  .img2,
+  .img3 {
+    width: 80%;
+    height: 150px;
+    background-size: cover;
+    background-position: center;
+  }
+}
+@media (max-width: 768px) {
+  .grid {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 0 20px;
+  }
+
+  .travel-card {
+    width: 100%;
+    padding: 15px;
+  }
+
+  .car-img img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+
+  .btn-layanan a {
+    font-size: 14px;
+    padding: 8px 12px;
+  }
+}
+@media (max-width: 768px) {
+  .row-footer {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    padding: 20px;
+  }
+
+  .footer-col {
+    width: 100%;
+    text-align: center;
+  }
+
+  .footer-content ul {
+    padding-left: 0;
+  }
+
+  .footer-content ul li {
+    margin: 8px 0;
+  }
+
+  .head-footer img {
+    max-width: 100px;
+  }
+
+  .row2 {
+    text-align: center;
+    font-size: 14px;
   }
 }
