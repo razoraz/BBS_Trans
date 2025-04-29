@@ -91,8 +91,15 @@ a {
 .menu-icon {
   font-size: 28px;
   display: none;
-  color: #efeeea;
   cursor: pointer;
+  color: #ffffff;
+}
+.show {
+  display: block;
+}
+.material-icons-outlined {
+  margin-right: 10px;
+ 
 }
 
 /* Optional - buat body scroll smooth */
@@ -367,7 +374,7 @@ html {
   text-align: center;
   align-items: center;
   border-radius: 20px;
-  background: #ECEFCA;
+  background: #ecefca;
   box-shadow: 0px 1px 12px 0px rgba(0, 0, 0, 0.09);
   backdrop-filter: blur(5px);
   -webkit-backdrop-filter: blur(5px);
@@ -384,7 +391,6 @@ html {
   height: 40px;
   object-fit: contain;
 }
-
 
 .scard img {
   width: 60px;
@@ -449,32 +455,54 @@ html {
   .navbar-nav ul {
     display: none;
     flex-direction: column;
-    width: 100%;
-    background: rgba(255, 255, 255, 0.7);
+    align-items: center; /* penting agar item di tengah */
+    justify-content: center;
+
     margin-top: 10px;
     border-radius: 10px;
     overflow: hidden;
+    padding: 20px 40px; /* ini ngatur jarak kiri-kanan dan atas-bawah */
+    width: fit-content; /* biar ukurannya ngikutin isi, bukan full 100% */
+    margin-left: auto;
+    margin-right: auto; /* ini bikin kontainer ul bener-bener ketengah */
   }
-
   .navbar-nav ul.show {
     display: flex;
   }
-
   .navbar-nav li {
     width: 100%;
     text-align: center;
     padding: 10px 0;
-    margin: 0;
   }
-
-  .navbar-nav li:hover {
-    background-color: #fcdccf;
+  .navbar .navbar-nav {
+    width: 100%; /* Pastikan lebar penuh pada layar kecil */
   }
-
   .menu-icon {
     display: block;
+    display: flex;
     position: absolute;
-    top: 20px;
-    right: 30px;
+    top: 0;
+    right: 0;
+    margin: 1.5rem 10%;
+
+  }
+  .menu-icon:hover{
+    color: #ed5c01;
+  }
+  .navbar .navbar-nav ul {
+    display: none;
+  }
+  .navbar .navbar-nav ul.show {
+    display: flex;
+    flex-direction: column;
+  }
+  nav .navbar-nav {
+    transform: translateX(0); /* Mengembalikan posisi untuk tampilan menu-icon */
+  }
+  .navbar .navbar-nav li:hover a {
+    color: #ed5c01;
+  }
+  .navbar .navbar-nav li::after {
+    border-bottom: none;
   }
 }
