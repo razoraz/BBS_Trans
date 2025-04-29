@@ -86,7 +86,7 @@ ul {
   display: block;
   transition: all 0.3s ease;
 }
-.footer .row2 p{
+.footer .row2 p {
   text-align: center;
   align-items: center;
 }
@@ -132,6 +132,7 @@ ul {
 }
 @media (max-width: 574px) {
   .footer-col {
+    flex-direction: column;
     width: 100%;
   }
 }
