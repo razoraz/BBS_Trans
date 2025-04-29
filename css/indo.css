@@ -1,0 +1,415 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@200;300;400;500;600;700;800&display=swap');
+
+:root {
+  --primary: #273f4f;
+  --accent: #ed5c01;
+  --light-bg: #e1e1fb;
+  --text-light: #ffffff;
+  --dark-text: #333333;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Mulish', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Navbar */
+.navbar {
+  position: relative;
+  width: 100%;
+  height: 90vh;
+  overflow: hidden;
+}
+
+.navbar .bg-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 1;
+}
+
+.nav-content {
+  position: fixed;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+  width: 100%;
+  height: 70px;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0));
+  backdrop-filter: blur(5px);
+}
+
+.nav-logo img {
+  height: 100px;
+}
+
+.navbar-nav ul {
+  display: flex;
+  list-style: none;
+  padding-right: 3rem;
+  margin: 0;
+}
+
+.navbar-nav li {
+  margin: 0 1rem;
+  font-weight: 700;
+  font-size: 15px;
+  position: relative;
+}
+
+.navbar-nav a {
+  padding: 10px;
+  color: var(--text-light);
+  display: inline-block;
+}
+
+.navbar-nav li:hover a {
+  color: var(--accent);
+}
+
+.navbar-nav li::after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 3px;
+  background: var(--accent);
+  transition: 0.3s;
+}
+
+.navbar-nav li:hover::after {
+  width: 50%;
+  margin: auto;
+}
+
+.menu-icon {
+  font-size: 28px;
+  display: none;
+  cursor: pointer;
+  color: #ffffff;
+}
+
+.menu-icon:hover {
+  color: var(--accent);
+}
+
+.material-icons-outlined {
+  margin-right: 10px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Hero Section */
+.nav-chat-now {
+  text-align: center;
+  margin-top: 80px;
+  padding: 50px;
+  color: var(--text-light);
+  z-index: 2;
+  position: relative;
+}
+
+.nav-chat-now h1 {
+  font-size: 50px;
+  color: var(--primary);
+}
+
+.nav-chat-now p {
+  font-size: 20px;
+}
+
+.travel-text {
+  font-weight: 1000;
+  color: var(--primary);
+}
+
+.btn-whatsapp {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: var(--primary);
+  color: var(--text-light);
+  border-radius: 20px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.btn-whatsapp:hover {
+  background-color: var(--accent);
+}
+
+/* Section Hero */
+.hero {
+  padding: 80px 40px;
+  background-color: #f4f4f4;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.hero-head {
+  text-align: center;
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+.hero-head h1 {
+  font-size: 36px;
+  color: #273f4f;
+  margin-bottom: 20px;
+}
+
+.decorative-line {
+  width: 100px;
+  height: 6px;
+  background-color: #273f4f;
+  border-radius: 2px;
+  margin: 0 auto 50px;
+}
+
+.hero-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.hero-left {
+  flex: 1 1 50%;
+  padding: 20px;
+}
+
+.hero-left h5 {
+  font-size: 18px;
+  line-height: 1.6;
+  color: #333;
+}
+
+.hero-right {
+  flex: 1 1 45%;
+  text-align: center;
+  padding: 20px;
+}
+
+.img-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.img1,
+.img2,
+.img3 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  transition: opacity 1s ease-in-out;
+}
+
+.img1 {
+  background: url('../image/car/innova_reborn.jpg') no-repeat center center;
+  opacity: 1;
+}
+
+.img2 {
+  background: url('../image/car/innova_reborn_3.jpg') no-repeat center center;
+  opacity: 0;
+}
+
+.img3 {
+  background: url('../image/car/interior_innova.jpg') no-repeat center center;
+  opacity: 0;
+}
+
+/* Keyframe Animations */
+@keyframes fade {
+  0% {
+    opacity: 1;
+  }
+  33% {
+    opacity: 0;
+  }
+  66% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fade2 {
+  0% {
+    opacity: 0;
+  }
+  33% {
+    opacity: 1;
+  }
+  66% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes fade3 {
+  0% {
+    opacity: 0;
+  }
+  33% {
+    opacity: 0;
+  }
+  66% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .hero {
+    padding: 40px 20px;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero-head h1 {
+    font-size: 28px;
+  }
+
+  .hero-left {
+    flex: 1 1 100%;
+    margin-bottom: 20px;
+  }
+
+  .hero-left h5 {
+    font-size: 16px;
+    color: #333;
+  }
+
+  .hero-right {
+    flex: 1 1 100%;
+  }
+
+  .img-container {
+    width: 100%;
+    height: 250px;
+  }
+
+  .img1,
+  .img2,
+  .img3 {
+    height: 100%;
+    background-size: cover;
+  }
+
+  .img1 {
+    background: url('../image/car/innova_reborn.jpg') no-repeat center center;
+  }
+
+  .img2 {
+    background: url('../image/car/innova_reborn_3.jpg') no-repeat center center;
+  }
+
+  .img3 {
+    background: url('../image/car/interior_innova.jpg') no-repeat center center;
+  }
+}
+
+/* Section 2 & 3 kamu bisa tetap pakai seperti sebelumnya, atau mau aku bantu lanjut rapiin juga */
+
+.fade-section {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.8s ease-out;
+}
+
+.fade-section.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ================================
+   RESPONSIVE DESIGN
+   ================================ */
+@media only screen and (max-width: 768px) {
+  .nav-content {
+    flex-direction: column;
+    align-items: flex-start;
+    height: auto;
+  }
+
+  .navbar-nav ul {
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 40px;
+    margin: 10px auto 0;
+    display: none;
+  }
+
+  .navbar-nav ul.show {
+    display: flex;
+  }
+
+  .navbar-nav li {
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+  }
+
+  .menu-icon {
+    display: flex;
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 1.5rem 10%;
+  }
+
+  .hero {
+    flex-direction: column;
+    padding: 20px;
+    text-align: center;
+  }
+
+  .hero-left,
+  .hero-right {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .decorative-line {
+    margin: 0 auto 20px;
+  }
+
+  .hero .light-text {
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .img1,
+  .img2,
+  .img3 {
+    height: 150px;
+  }
+}
