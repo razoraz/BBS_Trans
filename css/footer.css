@@ -117,8 +117,12 @@ ul {
 }
 
 .social-links {
-  display: flex;
+  display: flex; /* Menyusun link sosial 
+  secara horisontal di tengah */
   flex-direction: column;
+  align-items: flex-start;
+  gap: 20px; /* Memberikan jarak antar ikon */
+  margin-top: 20px;
 }
 
 .social-links a {
@@ -131,6 +135,10 @@ ul {
   color: #273f4f;
   margin-left: 40px;
   transition: all 0.5s ease;
+}
+.social-links i {
+  width: 20px; /* Tetapkan lebar tetap agar ikon rata */
+  text-align: center;
 }
 
 /* ----------------------- 
