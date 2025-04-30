@@ -1,16 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Mulish:wght@200;300;400;500;600;700;800&display=swap');
+
 body {
   font-family: 'Mulish', sans-serif;
 }
+
 .head-footer {
   display: flex;
-  justify-content: space-between; /* Memisahkan logo dan h1 */
-  align-items: center; /* Menjaga keduanya tetap sejajar secara vertikal */
+  justify-content: space-between;
+  align-items: center;
   margin-bottom: 20px;
 }
 
 .head-footer img {
-  max-width: 100px; /* Ukuran gambar logo */
+  max-width: 100px;
 }
 
 .head-footer h1 {
@@ -21,21 +23,19 @@ body {
   cursor: pointer;
 }
 
-.row-footer {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
-}
+.row-footer,
 .row2 {
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
 }
+
 ul {
   list-style: none;
   padding: 5px 5px;
-  margin: initial;
+  margin: 0;
 }
+
 .footer {
   width: 100%;
   box-shadow: 2px 2px 2px 3px rgba(0.1, 0.1, 0.1, 0.06);
@@ -44,20 +44,23 @@ ul {
   display: flex;
   flex-direction: column;
   background-color: #ffffff;
+  padding: 20px;
 }
+
 .footer-col {
   display: flex;
   flex: 1;
   flex-wrap: wrap;
   gap: 5px;
   margin: 20px;
-  margin-bottom: 20px;
 }
+
 .footer-content {
   flex-direction: column;
   margin: 5px;
   margin-bottom: 20px;
 }
+
 .foot-left img {
   margin-bottom: 20px;
   margin-top: 20px;
@@ -73,9 +76,11 @@ ul {
   font-weight: 700;
   position: relative;
 }
+
 .footer-col ul li:not(:last-child) {
   margin-bottom: 10px;
 }
+
 .footer-col ul li a {
   margin-top: 10px;
   color: var(--light-text-color-body-1, #273f4f);
@@ -86,10 +91,12 @@ ul {
   display: block;
   transition: all 0.3s ease;
 }
+
 .footer .row2 p {
   text-align: center;
   align-items: center;
 }
+
 .row2 {
   display: flex;
   flex-wrap: wrap;
@@ -100,18 +107,17 @@ ul {
 }
 
 .row2 p {
-  text-align: center;
-  align-items: center;
   color: var(--light-text-color-body-1, #273f4f);
   font-size: 16px;
-  font-style: normal;
   font-weight: 400;
   letter-spacing: 0.08px;
 }
+
 .social-links {
   display: flex;
   flex-direction: column;
 }
+
 .social-links a {
   width: 100%;
   display: flex;
@@ -123,17 +129,70 @@ ul {
   margin-left: 40px;
   transition: all 0.5s ease;
 }
-/*responsive*/
+
+/* ----------------------- 
+   MEDIA QUERY RESPONSIF
+------------------------ */
+@media (max-width: 768px) {
+  .footer {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .footer-col {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    text-align: center;
+    margin: 0;
+  }
+
+  .footer-content ul {
+    padding-left: 0;
+  }
+
+  .footer-content ul li {
+    margin: 8px 0;
+  }
+
+  .head-footer img {
+    max-width: 80px;
+  }
+
+  .head-footer h1 {
+    font-size: 20px;
+    margin-right: 0;
+  }
+
+  .row2 {
+    font-size: 14px;
+  }
+
+  .social-links a {
+    font-size: 14px;
+    margin-left: 0;
+  }
+
+  .footer-col h4 {
+    font-size: 16px;
+  }
+}
+
 @media (max-width: 970px) {
   .footer-col {
     width: 50%;
     margin-bottom: 30px;
   }
 }
+
 @media (max-width: 574px) {
   .footer-col {
     flex-direction: column;
     width: 100%;
+  }
+
+  .row2 p {
+    font-size: 14px;
   }
 }
 
@@ -152,6 +211,7 @@ ul {
   color: #ed5c01;
   transition: all 0.5s ease;
 }
+
 /* Scroll Fade in and out */
 .fade-section {
   opacity: 0;
