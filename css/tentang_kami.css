@@ -1,5 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Mulish:wght@200;300;400;500;600;700;800&display=swap');
 
+/* Responsive */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+html,
+body {
+  overflow-x: hidden;
+  max-width: 100%;
+}
+/* body scroll smooth */
+html {
+  scroll-behavior: smooth;
+}
+
 /* Css Body */
 body {
   font-family: 'Mulish', sans-serif;
@@ -46,7 +62,7 @@ a {
   backdrop-filter: blur(5px);
 }
 .nav-logo img {
-  height: 100px;
+  height: 90px;
 }
 .navbar-nav ul {
   padding-right: 3rem;
@@ -81,11 +97,6 @@ a {
 .navbar-nav li:hover::after {
   width: 50%;
   margin: auto;
-}
-
-/*body scroll smooth */
-html {
-  scroll-behavior: smooth;
 }
 
 /* Section Chat Whatsapp */
@@ -130,7 +141,6 @@ html {
   display: flex;
   flex-wrap: wrap;
   flex: 1;
-  background-color: #ecefca;
   border-radius: 20px;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
 }
@@ -169,7 +179,7 @@ html {
 }
 .tentang-kami-content .travel-text {
   font-weight: bold;
-  color: #273f4f; /* Bisa sesuaikan warna brand kamu */
+  color: #273f4f;
 }
 .tentang-kami-content .btn-pesan {
   margin-bottom: 20px;
@@ -289,36 +299,32 @@ html {
 }
 .material-icons-outlined {
   margin-right: 10px;
- 
 }
 
 /* Responsive */
 @media only screen and (max-width: 768px) {
+  /* Navbar */
   .nav-content {
     flex-direction: column;
     align-items: flex-start;
     height: auto;
     padding: 1rem;
   }
-
   .nav-logo {
     align-self: center;
     margin-bottom: 10px;
   }
-
   .navbar-nav ul {
     display: none;
     flex-direction: column;
-    align-items: center; /* penting agar item di tengah */
+    align-items: center;
     justify-content: center;
-
     margin-top: 10px;
     border-radius: 10px;
     overflow: hidden;
-    padding: 20px 40px; /* ini ngatur jarak kiri-kanan dan atas-bawah */
-    width: fit-content; /* biar ukurannya ngikutin isi, bukan full 100% */
+    padding: 20px 40px;
     margin-left: auto;
-    margin-right: auto; /* ini bikin kontainer ul bener-bener ketengah */
+    margin-right: auto;
   }
   .navbar-nav ul.show {
     display: flex;
@@ -329,7 +335,7 @@ html {
     padding: 10px 0;
   }
   .navbar .navbar-nav {
-    width: 100%; /* Pastikan lebar penuh pada layar kecil */
+    width: 100%;
   }
   .menu-icon {
     display: block;
@@ -350,12 +356,35 @@ html {
     flex-direction: column;
   }
   nav .navbar-nav {
-    transform: translateX(0); /* Mengembalikan posisi untuk tampilan menu-icon */
+    transform: translateX(0);
   }
   .navbar .navbar-nav li:hover a {
     color: #ed5c01;
   }
   .navbar .navbar-nav li::after {
     border-bottom: none;
+  }
+}
+
+@media (max-width: 576px) {
+  /* Navbar */
+  .nav-chat-now {
+    margin-top: 150px;
+    flex-direction: column;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+  .nav-chat-now h1 {
+    font-size: 1.6rem;
+  }
+  .nav-chat-now p {
+    font-size: 1rem;
+  }
+  .btn-navbar,
+  .btn-whatsapp {
+    font-size: 0.9rem;
+    padding: 10px 15px;
   }
 }
