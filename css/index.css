@@ -1,5 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Mulish:wght@200;300;400;500;600;700;800&display=swap');
 
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+html,
+body {
+  overflow-x: hidden;
+  max-width: 100%;
+}
+
 /* Body all */
 body {
   font-family: 'Mulish', sans-serif;
@@ -377,14 +388,11 @@ html {
   margin-top: 30px;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-evenly;
-  gap: 24px;
+  justify-content: center;
+  gap: 100px;
 }
 .scard {
-  display: flex;
-  flex-wrap: wrap;
-  text-align: center;
-  align-items: center;
+  box-sizing: border-box;
   border-radius: 20px;
   background: #ecefca;
   box-shadow: 0px 1px 12px 0px rgba(0, 0, 0, 0.09);
@@ -520,6 +528,9 @@ html {
     padding: 40px 20px;
     text-align: center;
   }
+  .hero-content {
+    flex-direction: column-reverse;
+  }
   .hero-left {
     width: 100%;
     margin-left: auto;
@@ -561,9 +572,15 @@ html {
   }
   .hero-right {
     margin-top: -5px;
-    width: 100%;
+    max-width: 80%;
+    height: auto;
     margin-left: auto;
     margin-right: auto;
+  }
+  .img-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
   }
 }
 
