@@ -329,16 +329,18 @@ html {
 }
 .heading-container {
   display: flex;
+
   align-items: center;
   gap: 10px;
 }
 .heading-container h4 {
   font-size: 18px;
+  text-align: left;
   color: #e1e1fb;
 }
 .heading-container img {
   width: 80px;
-  height: 80px;
+  height: auto;
   object-fit: cover;
   border-radius: 50%;
 }
@@ -417,12 +419,15 @@ html {
 }
 .services-card > div {
   display: flex;
-  width: 338px;
-  padding: 24px;
+  width: 300px; /* Dikecilkan agar lebih rapi */
+  padding: 20px;
   flex-direction: column;
   align-items: flex-start;
   gap: 16px;
+  margin: 10px; /* Tambah margin untuk skat antar kartu */
+  border: 1px solid #d0d0d0; /* Skat halus */
 }
+
 .services-card .scard b.second-text {
   color: #273f4f;
   font-size: 1.5rem;
@@ -643,5 +648,97 @@ html {
   .row2 {
     text-align: center;
     font-size: 14px;
+  }
+}
+@media (max-width: 768px) {
+  .services-card {
+    gap: 40px;
+  }
+
+  .services-card > div {
+    width: 100%;
+    padding: 20px;
+    align-items: center;
+    text-align: center;
+  }
+
+  .scard .scard-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .scard .scard-container img {
+    margin-bottom: 8px;
+  }
+
+  .services-card .scard b.second-text {
+    font-size: 1.25rem;
+    line-height: 1.4;
+  }
+
+  .services-card .scard p.third-text {
+    font-size: 0.95rem;
+    line-height: 1.5;
+  }
+}
+
+@media (max-width: 480px) {
+  .services-card {
+    gap: 24px;
+  }
+
+  .scard {
+    padding: 16px;
+  }
+
+  .services-card .scard b.second-text {
+    font-size: 1.1rem;
+  }
+
+  .services-card .scard p.third-text {
+    font-size: 0.9rem;
+  }
+}
+@media (max-width: 576px) {
+  .heading-container {
+    flex-direction: column;
+  }
+
+  .heeading-container img {
+    margin-left: auto;
+    margin-right: auto;
+    width: 60px;
+  }
+
+  .heading-container h4 {
+    font-size: 14px;
+    margin-top: 8px;
+    text-align: center;
+  }
+  .content-container {
+    margin-top: -30px;
+  }
+
+  .nav-chat-now{
+    flex-direction: column;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+  
+  .nav-chat-now h1 {
+    font-size: 1.6rem;
+  }
+
+  .nav-chat-now p {
+    font-size: 1rem;
+  }
+
+  .btn-navbar,
+  .btn-whatsapp {
+    font-size: 0.9rem;
+    padding: 10px 15px;
   }
 }
