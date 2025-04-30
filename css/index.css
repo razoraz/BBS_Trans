@@ -228,7 +228,7 @@ html {
 .img-container {
   position: relative;
   width: 100%;
-  aspect-ratio: 4 / 3;
+  aspect-ratio: 5 / 4;
 }
 
 .img1,
@@ -556,13 +556,12 @@ html {
   .hero-left h1 {
     font-size: 24px;
   }
-  .hero-head{
+  .hero-head {
     margin-left: 0px;
     margin-right: 0px;
   }
 
   .hero-head h1 {
-
     text-align: center;
     font-size: 30px;
   }
