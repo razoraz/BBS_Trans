@@ -556,7 +556,14 @@ html {
   .hero-left h1 {
     font-size: 24px;
   }
+  .hero-head{
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+
   .hero-head h1 {
+
+    text-align: center;
     font-size: 30px;
   }
   .hero-left h5 {
