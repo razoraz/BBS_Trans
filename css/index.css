@@ -673,8 +673,6 @@ html {
   }
 }
 @media (max-width: 576px) {
- 
-
   .heading-container {
     flex-direction: column;
   }
@@ -695,6 +693,7 @@ html {
   }
 
   .nav-chat-now {
+    margin-top: 150px;
     flex-direction: column;
     align-items: center;
     margin-left: auto;
