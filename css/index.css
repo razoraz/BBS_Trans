@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Mulish:wght@200;300;400;500;600;700;800&display=swap');
 
+/* Responsive */
 *,
 *::before,
 *::after {
@@ -9,6 +10,10 @@ html,
 body {
   overflow-x: hidden;
   max-width: 100%;
+}
+/* body scroll smooth */
+html {
+  scroll-behavior: smooth;
 }
 
 /* Body all */
@@ -56,32 +61,27 @@ a {
   background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), /* Hitam pekat 70% */ rgba(0, 0, 0, 0) /* Hitam tapi transparan 0% */);
   backdrop-filter: blur(5px);
 }
-
 .nav-logo img {
-  height: 100px;
+  height: 90px;
 }
-
 .navbar-nav ul {
   padding-right: 3rem;
   display: flex;
   list-style: none;
   margin: 0;
 }
-
 .navbar-nav li {
   margin: 0 1rem;
   font-weight: 700;
   font-size: 15px;
   position: relative;
 }
-
 .navbar-nav a {
   padding: 10px;
   color: #efeeea;
   display: inline-block;
 }
-
-/* Hover effect */
+/* Hover effect Navbar */
 .navbar-nav li:hover a {
   color: #ed5c01;
 }
@@ -98,7 +98,7 @@ a {
   margin: auto;
 }
 
-/* Menu Icon */
+/* Menu Icon Navbar */
 .menu-icon {
   font-size: 28px;
   display: none;
@@ -110,11 +110,6 @@ a {
 }
 .material-icons-outlined {
   margin-right: 10px;
-}
-
-/* Optional - buat body scroll smooth */
-html {
-  scroll-behavior: smooth;
 }
 
 /* Section Chat Whatsapp */
@@ -149,7 +144,6 @@ html {
   font-weight: bold;
   transition: background-color 0.3s ease;
 }
-
 .btn-whatsapp:hover {
   background-color: #ed5c01;
 }
@@ -170,7 +164,6 @@ html {
   text-align: center;
   padding: 20px;
 }
-
 .hero-head {
   margin-left: 20px;
   width: 100%;
@@ -188,7 +181,6 @@ html {
   align-items: center;
   width: 100%;
 }
-
 .hero .light-text {
   text-align: left;
   color: var(--light-text-color-body-1, #333333);
@@ -230,7 +222,6 @@ html {
   width: 100%;
   aspect-ratio: 5 / 4;
 }
-
 .img1,
 .img2,
 .img3 {
@@ -245,7 +236,6 @@ html {
   z-index: 2;
   transition: opacity 0.8s ease-in-out;
 }
-
 .img1 {
   background-image: url(../image/car/innova_reborn.jpg);
   animation: fade 8s infinite;
@@ -258,7 +248,6 @@ html {
   background-image: url(../image/car/interior_innova.jpg);
   animation: fade3 8s infinite;
 }
-
 @keyframes fade {
   0%,
   100% {
@@ -269,7 +258,6 @@ html {
     opacity: 0;
   }
 }
-
 @keyframes fade2 {
   0%,
   100% {
@@ -282,7 +270,6 @@ html {
     opacity: 0;
   }
 }
-
 @keyframes fade3 {
   0%,
   33.33% {
@@ -349,13 +336,11 @@ html {
   color: #e1e1fb;
   margin-bottom: 10px;
 }
-
 .car-img img {
   width: 100%;
   height: 300px;
   border-radius: 8px;
 }
-
 .btn-layanan a {
   display: inline-block;
   margin-top: 20px;
@@ -367,10 +352,12 @@ html {
   font-weight: bold;
   transition: background-color 0.3s ease, color 0.3s ease;
 }
+/* Hover */
 .btn-layanan a:hover {
   background-color: #ed5c01;
   color: #e1e1fb;
 }
+/* Garis */
 .decorative-line-2 {
   width: 100px;
   height: 6px;
@@ -404,16 +391,14 @@ html {
 .scard .scard-container {
   display: flex;
   align-items: center;
-  gap: 10px; /* Jarak antara gambar dan tulisan */
+  gap: 10px;
   margin-bottom: 10px;
 }
-
 .scard .scard-container img {
-  width: 40px; /* Sesuaikan ukuran gambar */
+  width: 40px;
   height: 40px;
   object-fit: contain;
 }
-
 .scard img {
   width: 60px;
 }
@@ -427,7 +412,6 @@ html {
   margin: 10px; /* Tambah margin untuk skat antar kartu */
   border: 1px solid #d0d0d0; /* Skat halus */
 }
-
 .services-card .scard b.second-text {
   color: #273f4f;
   font-size: 1.5rem;
@@ -465,30 +449,28 @@ html {
 
 /* Responsive */
 @media only screen and (max-width: 768px) {
+  /* Navbar */
   .nav-content {
     flex-direction: column;
     align-items: flex-start;
     height: auto;
     padding: 1rem;
   }
-
   .nav-logo {
     align-self: center;
     margin-bottom: 10px;
   }
-
   .navbar-nav ul {
     display: none;
     flex-direction: column;
-    align-items: center; /* penting agar item di tengah */
+    align-items: center; 
     justify-content: center;
     margin-top: 10px;
     border-radius: 10px;
     overflow: hidden;
-    padding: 20px 40px; /* ini ngatur jarak kiri-kanan dan atas-bawah */
-
+    padding: 20px 40px; 
     margin-left: auto;
-    margin-right: auto; /* ini bikin kontainer ul bener-bener ketengah */
+    margin-right: auto; 
   }
   .navbar-nav ul.show {
     display: flex;
@@ -499,7 +481,7 @@ html {
     padding: 10px 0;
   }
   .navbar .navbar-nav {
-    width: 100%; /* Pastikan lebar penuh pada layar kecil */
+    width: 100%; 
   }
   .menu-icon {
     display: block;
@@ -520,7 +502,7 @@ html {
     flex-direction: column;
   }
   nav .navbar-nav {
-    transform: translateX(0); /* Mengembalikan posisi untuk tampilan menu-icon */
+    transform: translateX(0); 
   }
   .navbar .navbar-nav li:hover a {
     color: #ed5c01;
@@ -528,6 +510,8 @@ html {
   .navbar .navbar-nav li::after {
     border-bottom: none;
   }
+
+  /* Section 1*/
   .hero {
     flex-direction: column;
     padding: 40px 20px;
@@ -541,18 +525,6 @@ html {
     margin-left: auto;
     margin-right: auto;
   }
-  .decorative-line {
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50px;
-    height: 3px;
-  }
-  .decorative-line-2 {
-    width: 50px;
-    height: 3px;
-  }
-
   .hero-left h1 {
     font-size: 24px;
   }
@@ -560,7 +532,6 @@ html {
     margin-left: 0px;
     margin-right: 0px;
   }
-
   .hero-head h1 {
     text-align: center;
     font-size: 30px;
@@ -575,7 +546,6 @@ html {
     text-align: center;
     font-size: 12px;
   }
-
   .hero .light-text {
     margin-left: auto;
     margin-right: auto;
@@ -593,9 +563,20 @@ html {
     justify-content: center;
     flex-wrap: wrap;
   }
-}
+  /* Garis */
+  .decorative-line {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50px;
+    height: 3px;
+  }
+  .decorative-line-2 {
+    width: 50px;
+    height: 3px;
+  }
 
-@media (max-width: 768px) {
+  /* Section 2 */
   .grid {
     display: flex;
     flex-direction: column;
@@ -609,95 +590,51 @@ html {
   .content-container h4 {
     font-size: 12px;
   }
-
   .travel-card {
     width: 80%;
     margin-left: auto;
     margin-right: auto;
   }
-
   .car-img img {
     width: 100%;
     height: auto;
     border-radius: 10px;
   }
-
   .btn-layanan a {
     font-size: 14px;
     padding: 8px 12px;
   }
-}
 
-@media (max-width: 768px) {
+  /* Section 3 */
   .services-card {
     gap: 40px;
   }
-
   .services-card > div {
     width: 100%;
     padding: 20px;
     align-items: center;
     text-align: center;
   }
-
   .scard .scard-container {
     flex-direction: column;
     align-items: center;
     text-align: center;
   }
-
   .scard .scard-container img {
     margin-bottom: 8px;
   }
-
   .services-card .scard b.second-text {
     font-size: 1.25rem;
     line-height: 1.4;
   }
-
   .services-card .scard p.third-text {
     font-size: 0.95rem;
     line-height: 1.5;
   }
 }
 
-@media (max-width: 480px) {
-  .services-card {
-    gap: 24px;
-  }
-
-  .scard {
-    padding: 16px;
-  }
-
-  .services-card .scard b.second-text {
-    font-size: 1.1rem;
-  }
-
-  .services-card .scard p.third-text {
-    font-size: 0.9rem;
-  }
-}
 @media (max-width: 576px) {
-  .heading-container {
-    flex-direction: column;
-  }
-
-  .heeading-container img {
-    margin-left: auto;
-    margin-right: auto;
-    width: 60px;
-  }
-
-  .heading-container h4 {
-    font-size: 14px;
-    margin-top: 8px;
-    text-align: center;
-  }
-  .content-container {
-    margin-top: -30px;
-  }
-
+  /* Navbar */
   .nav-chat-now {
     margin-top: 150px;
     flex-direction: column;
@@ -706,18 +643,49 @@ html {
     margin-right: auto;
     text-align: center;
   }
-
   .nav-chat-now h1 {
     font-size: 1.6rem;
   }
-
   .nav-chat-now p {
     font-size: 1rem;
   }
-
   .btn-navbar,
   .btn-whatsapp {
     font-size: 0.9rem;
     padding: 10px 15px;
+  }
+
+  /* Section 2 */
+  .heading-container {
+    flex-direction: column;
+  }
+  .heeading-container img {
+    margin-left: auto;
+    margin-right: auto;
+    width: 60px;
+  }
+  .heading-container h4 {
+    font-size: 14px;
+    margin-top: 8px;
+    text-align: center;
+  }
+  .content-container {
+    margin-top: -30px;
+  }
+}
+
+@media (max-width: 480px) {
+  /* Section 3 */
+  .services-card {
+    gap: 24px;
+  }
+  .scard {
+    padding: 16px;
+  }
+  .services-card .scard b.second-text {
+    font-size: 1.1rem;
+  }
+  .services-card .scard p.third-text {
+    font-size: 0.9rem;
   }
 }
