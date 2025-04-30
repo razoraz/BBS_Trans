@@ -336,58 +336,7 @@ a {
     padding: 10px 15px;
   }
 }
-@media (max-width: 768px) {
-  .layanan-layout {
-    flex-direction: column;
-    padding: 1rem;
-  }
 
-  .layanan-container {
-    padding: 1rem;
-  }
-
-  .layanan-img img {
-    margin: 0 auto;
-    max-width: 100%;
-    height: auto;
-  }
-
-  .layanan-detail {
-    padding: 1rem;
-  }
-}
-
-@media (max-width: 576px) {
-  .layanan-header h1 {
-    font-size: 1.8rem;
-  }
-
-  .layanan-header p {
-    font-size: 1rem;
-  }
-
-  .layanan-container {
-    padding: 1rem 0.5rem;
-  }
-
-  .btn-pesan {
-    font-size: 0.9rem;
-    padding: 0.6rem 1.2rem;
-  }
-
-  .layanan-img img {
-    width: 90%;
-  }
-
-  .layanan-detail h2 {
-    font-size: 1.1rem;
-  }
-
-  .layanan-detail .price,
-  .layanan-detail .kriteria {
-    font-size: 0.95rem;
-  }
-}
 /* Tambahan Responsif untuk Layanan */
 @media (max-width: 768px) {
   .layanan-layout {
@@ -466,4 +415,3 @@ a {
     padding: 0.6rem 1.1rem;
   }
 }
-
